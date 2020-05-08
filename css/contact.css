@@ -1,0 +1,24 @@
+.container-contact {
+    font-family: var(--roboto);
+    background-color: #fbfbfb;
+    width: 2000px;
+    margin: 100px 0;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(118, 85, 225,1); 
+}
+
+#message {
+    height: 150px;
+    resize: none;
+}
+
+#error_message {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    background-color: brown;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
