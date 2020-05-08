@@ -1,0 +1,155 @@
+/* Fonts */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+
+/* Jumbotron Baslangic */
+
+.site-main .site-banner .jumbotron {
+    background-image: url(../img/memleket/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 720px;
+    text-align: center;
+    position: relative;
+
+}
+
+.site-main .site-banner .jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.site-main .site-banner .jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.site-main .site-banner .jumbotron h1 {
+    color: whitesmoke;
+    margin-top: 150px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Jumbotron Son */
+
+/* Info Panel Baslangic */
+.site-main .infopanel-area .info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0,0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.site-main  .infopanel-area .info-panel img {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+}
+
+.site-main .infopanel-area .info-panel h4 {
+    font: normal 500 16px var(--roboto);
+    color: var(--title-color);
+    text-transform: uppercase;
+    margin-top: 5px;
+
+}
+
+.site-main .infopanel-area .info-panel p {
+    font-size: 14;
+    color: var(--text-color);
+    margin-top: -5px;
+}
+
+/* info panel SON */
+
+/* About Indonesia */
+
+/* Working Space */
+.about-indonesia {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.about-indonesia .info-indonesia {
+    margin-bottom: 120px;
+}
+
+.about-indonesia img {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,.7);
+}
+
+.about-indonesia h3 {
+    font: normal 500 40px var(--roboto);
+    color: var(--title-color);
+    margin-top: 30px;
+
+}
+
+.about-indonesia p {
+    font: normal 500 16px var(--roboto);
+    color: var(--text-color);
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+/* About Indonesia SON */
+
+/* Footer Area Baslangic*/ 
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(/img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+/* Footer Son*/ 
+
+/* @media only screen and (max-width: 1910px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+
+
+
+} */
