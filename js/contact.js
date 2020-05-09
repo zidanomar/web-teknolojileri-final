@@ -6,16 +6,18 @@ function validate(){
   var message = document.getElementById("message").value;
   var error_message = document.getElementById("error_message");
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var containNumer = /^[A-Za-z]+$/;
+  var specialCharacter = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
   
   error_message.style.padding = "10px";
   error_message.innerHTML ="";
   var text;
-  if(name.length < 2){
+  if( specialCharacter.test(name) || !containNumer.test(name) ){
     text = "Please Enter valid Name";
     error_message.innerHTML = text;
     return false;
   }
-  if(subject.length < 10){
+  if(subject.length < 10 ){
     text = "Please Enter Correct Subject";
     error_message.innerHTML = text;
     return false;
