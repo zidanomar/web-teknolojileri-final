@@ -41,7 +41,7 @@ $(document).ready(function () {
         }
     })
 
-    // sticky navigation menu
+    // navigation menu
 
     let nav_offset_top = $('.header_area').height() + 50;
 
