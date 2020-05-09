@@ -123,7 +123,7 @@ $user = $_SESSION["userGreeting"];
                                 My name is Zidan Omar Hamid. I am very interested in web technology and have worked on several projects as a frontend developer.
                             </p>
                             <p class="para">
-                            I keep them sharp, learn everyday and develop new skills such as backend development and mobile development. I am able to speak in English, Indonesian, Sundanese and Turkish. I don't always spend my time working in web development. I also love photography and traveling. and I welcome to website
+                            I keep my skill sharp, learn everyday and develop new skills such as backend development and mobile development. I am able to speak in English, Indonesian, Sundanese and Turkish. I don't always spend my time working in web development. I also love photography and traveling. and I welcome to website
                             </p>
                         </div>
                         <button type="button" class="btn button primary-button text-uppercase" onclick="document.location = 'https://github.com/FakeKoji/'">Github</button>
