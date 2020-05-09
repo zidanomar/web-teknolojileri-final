@@ -88,9 +88,9 @@ $user = $_SESSION["userGreeting"];
                         <h4 class="title-text text-uppercase">Junior Frontend Developer</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase" onclick="document.location = 'iletisim.php'">hire
                                     me</button>
-                                <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                                <button type="button" class="btn button secondary-button text-uppercase" onclick="document.location = '#cv-area'">Get cv</button>
                             </div>
                         </div>
                     </div>
@@ -120,17 +120,13 @@ $user = $_SESSION["userGreeting"];
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
-                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                                My name is Zidan Omar Hamid. I am very interested in web technology and have worked on several projects as a frontend developer.
                             </p>
                             <p class="para">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                here
+                            I keep them sharp, learn everyday and develop new skills such as backend development and mobile development. I am able to speak in English, Indonesian, Sundanese and Turkish. I don't always spend my time working in web development. I also love photography and traveling. and I welcome to website
                             </p>
                         </div>
-                        <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                        <button type="button" class="btn button primary-button text-uppercase" onclick="document.location = 'https://github.com/FakeKoji/'">Github</button>
                     </div>
                 </div>
             </div>
@@ -145,6 +141,9 @@ $user = $_SESSION["userGreeting"];
                 <div class="row">
                     <div class="col-xl-6 col-lg-12 col-md-12">
                         <div class="first-row row">
+                            <div class="col-12 text-uppercase">
+                                <h1>Partner With</h1>
+                            </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="single-brand">
                                     <img src="./img/brands/logo1.png" alt="Brand-1 ">
@@ -210,7 +209,7 @@ $user = $_SESSION["userGreeting"];
                                 </div>
                             </div>
                             <div class="bg-panel"></div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -530,7 +529,7 @@ $user = $_SESSION["userGreeting"];
 
         <!--  ========================== CV Baslangic ============================  -->
 
-        <section class="cv-area">
+        <section class="cv-area" id="cv-area">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">

@@ -2,19 +2,6 @@
 
 session_start();
 
-if ( isset($_COOKIE['key']) ) {
-  $key = $_COOKIE['key'];
-
-    if ( $key === hash('sha256', $_POST["username"]) ) {
-        $_SESSION['login'] = true;
-    }
-}
-
-if ( isset($_SESSION["login"]) ) {
-    header("Location: index.php");
-    exit;
-}
-
 if (isset($_POST["login"]) ) {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -22,10 +9,6 @@ if (isset($_POST["login"]) ) {
 
     if ( $username == "zidan.hamid@ogr.sakarya.edu.tr" && $password == 123) {
         $_SESSION['login'] = true;
-
-        if ( isset($_POST["remember"])) {
-            setcookie('key', hash('sha256', $username), time() + 60);
-        }
 
         header("Location: index.php");
         exit;
@@ -68,10 +51,8 @@ if (isset($_POST["login"]) ) {
       </div>
       <div class="forgot-link form-group d-flex justify-content-between align-items-center">
         <div class="form-check">
-          <input type="checkbox" class="form-check-input" name="remember" id="remember">
-          <label class="form-check-label" for="remember">Remember Me</label>
           <?php if ( isset($error) ) : ?>
-          <p style="color: red; font-style: italic;">wrong username / password !</p>
+          <p style="color: red; font-style: italic;">wrong username/password !</p>
           <?php endif; ?>
         </div>
       </div>
