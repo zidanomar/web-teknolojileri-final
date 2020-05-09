@@ -9,7 +9,12 @@
 /* import global styling */ 
 @import url(./partials/_global.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Login Baslangic*/
+
 
 .login-container{
     height: 100vh;
@@ -93,18 +98,15 @@
     background-clip: text;
 }
 
-.header_area .main-menu .logout:hover {
-    background: rgb(141, 37, 37);
-}
-
 
 
 /* navigation */ 
 
 /* Banner Baslangic */ 
 
-.site-main .site-banner {
-    background: url(/img/banner/banner-pattern.jpg) no-repeat 0% 50%;
+.site-main .site-banner .site-title {
+    background: url(../img/banner/banner-pattern.jpg) no-repeat 100% 48%;
+    z-index: 2;
 }
 
 .site-main .site-banner .site-title h3{
@@ -148,6 +150,7 @@
 
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
+    text-align: justify;
 }
 
 /* Hakkimda son */ 

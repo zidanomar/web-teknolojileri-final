@@ -13,9 +13,14 @@
 /* Buttons */ 
 
 .btn-primary {
-    background-image: var(--gradient-color);
+    background: var(--gradient-color);
     border: hidden;
     font-family: var(--roboto);
+    transition: .3s ease-in;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.75);
 }
 
 .button{
@@ -53,13 +58,14 @@
 .button.secondary-button{
     background: white;
     background-clip: padding-box;
-    transition: background .6s ease;
+    transition: background .6s;
+    box-shadow: var(--box-shadow);
 }
 
 .button.secondary-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
-    box-shadow: var(--box-shadow);
+    background-clip: padding-box;
 }
 
 p.para{
