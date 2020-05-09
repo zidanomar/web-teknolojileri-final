@@ -12,7 +12,7 @@ function validate(){
   error_message.style.padding = "10px";
   error_message.innerHTML ="";
   var text;
-  if( specialCharacter.test(name) || !containNumer.test(name) ){
+  if( specialCharacter.test(name) || !containNumer.test(name) || name.length < 2){
     text = "Please Enter valid Name";
     error_message.innerHTML = text;
     return false;
