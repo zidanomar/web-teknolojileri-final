@@ -83,28 +83,68 @@
 
 /* Working Space */
 .about-indonesia {
-    margin-top: 120px;
+    margin-top: 100px;
     text-align: center;
 }
 
-.about-indonesia .info-indonesia {
-    margin-bottom: 120px;
+.about-indonesia .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
-.about-indonesia img {
-    position: relative;
+.img-left {
     border-radius: 20px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0,.7);
+    box-shadow: -15px 15px 15px rgba(118, 85, 225,.7);
     transition: .3s;
-    margin: 10% 0 -10% 0;
 }
 
-.about-indonesia img:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0,.7);
+.img-left:hover {
     filter: brightness(1.1);
-    margin: 5% 0 -5% 0;
+    box-shadow: -5px 5px 5px rgba(118, 85, 225,.7);
     cursor: pointer;
-    
+}
+
+.img-right {
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(118, 85, 225,.7);
+    transition: .3s;
+}
+
+.img-right:hover {
+    filter: brightness(1.1);
+    box-shadow: 5px 5px 5px rgba(118, 85, 225,.7);
+    cursor: pointer;
+}
+
+
+
+.about-indonesia .info-indonesia-right  {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 120px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(118, 85, 225,.7);
+    transition: .3s;
+}
+
+.about-indonesia .info-indonesia-right:hover {
+    box-shadow: 5px 5px 5px rgba(118, 85, 225,.7);
+    filter: brightness(1.1);   
+}
+
+.about-indonesia .info-indonesia-left  {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 120px;
+    border-radius: 20px;
+    box-shadow: -15px 15px 15px rgba(118, 85, 225,.7);
+    transition: .3s;
+}
+
+.about-indonesia .info-indonesia-left:hover {
+    box-shadow: -5px 5px 5px rgba(118, 85, 225,.7);
+    filter: brightness(1.1);   
 }
 
 .about-indonesia h3 {

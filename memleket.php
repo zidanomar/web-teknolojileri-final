@@ -122,33 +122,39 @@ if ( !isset($_SESSION["login"]) ) {
             <section class="project-area">
                 <div class="container">
                     <div class="row grid justify-content-around about-indonesia">
-                        <div class="col-lg-6 element-item info-indonesia">
-                            <a class="test-popup-link" href="./img/memleket/rajaampat.png">
-                                <img src="./img/memleket/rajaampat.png" alt="rajaampat" class="img-fluid">
-                            </a>
+                        <div class="col-lg-6 info-indonesia"> 
+                            <div class="element-item owl-carousel owl-theme">
+                                <img src="./img/memleket/rajaampat.png" class="img-left" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/rajaampat1.png" class="img-left" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/rajaampat2.png" class="img-left" alt="img1" class="img-fluid">  
+                            </div>                                             
                         </div>
-                        <div class="col-lg-4 text-lg-center info-indonesia">
+                        <div class="col-lg-4 text-lg-center info-indonesia-right">
                             <h3>Raja Ampat</h3>
                             <p>Far from the view-blocking skyscrapers, dense and hectic concrete jungles, congested traffics, flickering electric billboards, endless annoying noises, and all the nuisances of modern cities, you will find a pristine paradise where Mother Nature and warm friendly people welcome you with all the exceptional wonders in Raja Ampat, the islands-regency in West Papua Province. With all the spectacular wonders above and beyond its waters, as well as on land and amidst the thick jungles, this is truly the place where words such as beautiful, enchanting, magnificent, and fascinating get its true physical meaning.</p>
                             <a href="https://www.indonesia.travel/gb/en/destinations/maluku-papua/raja-ampat" class="btn btn-primary text-uppercase">Visit Me!</a>
                         </div>
-                        <div class="col-lg-4 info-indonesia">
+                        <div class="col-lg-4 info-indonesia info-indonesia-left">
                             <h3>Borobudur Temple</h3>
                             <p>Yogyakarta, together with its twin city Surakarta (Solo), is the cradle of civilization on Java. This city was the seat of power that produced the magnificent temples of Borobudur and Prambanan in the 8th and 9th century and the new powerful Mataram kingdom of the 16th and 17th century.
                                 Yogyakarta was known with the slogan of “Jogja The Never ending Asia“ for its endless appeals. Today, it is also renowned as “ Jogja Istimewa “, a tagline that elaborates its special values.</p>
                             <a href="https://www.indonesia.travel/gb/en/destinations/java/yogyakarta" class="btn btn-primary text-uppercase">Vist Me!</a>
                         </div>
                         <div class="col-lg-6 info-indonesia">
-                            <a class="test-popup-link" href="./img/memleket/borobudur.png">
-                                <img src="./img/memleket/borobudur.png" alt="borobudur" class="img-fluid">
-                            </a>
+                            <div class="element-item owl-carousel owl-theme">
+                                <img src="./img/memleket/borobudur.png" class="img-right" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/borobudur1.png" class="img-right" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/borobudur2.png" class="img-right" alt="img1" class="img-fluid">
+                            </div>
                         </div>
                         <div class="col-lg-6 info-indonesia">
-                            <a class="test-popup-link" href="./img/memleket/indofood.png">
-                                <img src="./img/memleket/indofood.png" alt="indofood" class="img-fluid">
-                            </a>
+                            <div class="element-item owl-carousel owl-theme">
+                                <img src="./img/memleket/indofood.png" class="img-left" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/indofood1.png" class="img-left" alt="img1" class="img-fluid">
+                                <img src="./img/memleket/indofood2.png" class="img-left" alt="img1" class="img-fluid">  
+                            </div> 
                         </div>
-                        <div class="col-lg-4 info-indonesia">
+                        <div class="col-lg-4 info-indonesia info-indonesia-right">
                             <h3>The Seasoning Come From Heaven</span></h3>
                             <p>From chicken satay to tahu telor, rendang to nasi goreng, Indonesian cuisine has so much to offer. We show you where to go around town!</p>
                             <a href="https://migrationology.com/indonesian-food/" class="btn btn-primary text-uppercase link-button">Eat Me!</a>

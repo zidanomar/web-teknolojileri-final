@@ -41,6 +41,18 @@ $(document).ready(function () {
         }
     })
 
+    $('.project-area .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
+
+
     // navigation menu
 
     let nav_offset_top = $('.header_area').height() + 50;
