@@ -2,13 +2,10 @@
 
 session_start();
 
-if ( !isset($_SESSION["login"]) ) {
-  header("location: login.php");
-  exit;
+if ( isset($_SESSION["login"]) == true ) {
+  $isLogin = true;
+  $userGreeting = $_SESSION["userGreeting"];
 }
-
-$user = $_SESSION["userGreeting"];
-
 
 ?>
 
@@ -64,7 +61,11 @@ $user = $_SESSION["userGreeting"];
                             <a class="nav-item nav-link active" href="#">Home</a>
                             <a class="nav-item nav-link" href="memleket.php">my homeland</a>
                             <a class="nav-item nav-link" href="iletisim.php">contact</a>
-                            <a class="btn btn-primary logout" href="logout.php">logout</a>
+                            <?php if ( isset($isLogin) ) : ?>
+                                <a class="btn btn-primary logout" href="logout.php">logout</a>
+                            <?php else : ?>
+                                <a class="btn btn-primary logout" href="login.php">login</a>
+                            <?php endif; ?>
                         </div>
                         </div>
                     </div>
@@ -83,7 +84,10 @@ $user = $_SESSION["userGreeting"];
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title">
-                        <h3 class="title-text">Hey,</h3> <p> <?= $user; ?> !<p>
+                        <h3 class="title-text">Hey,</h3> 
+                        <?php if ( isset($isLogin) ) : ?>
+                                <p><?= $userGreeting;?> !</p>
+                        <?php endif; ?>
                         <h1 class="title-text text-uppercase">I am Zidan</h1>
                         <h4 class="title-text text-uppercase">Junior Frontend Developer</h4>
                         <div class="site-buttons">
