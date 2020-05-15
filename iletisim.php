@@ -2,9 +2,9 @@
 
 session_start();
 
-if ( !isset($_SESSION["login"]) ) {
-  header("location: login.php");
-  exit;
+if ( isset($_SESSION["login"]) == true ) {
+  $isLogin = true;
+  $userGreeting = $_SESSION["userGreeting"];
 }
 
 
@@ -62,7 +62,11 @@ if ( !isset($_SESSION["login"]) ) {
                             <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link" href="memleket.php">my homeland</a>
                             <a class="nav-item nav-link active" href="iletisim.php">contact</a>
-                            <a class="btn btn-primary logout" href="logout.php">logout</a>
+                            <?php if ( isset($isLogin) ) : ?>
+                                <a class="btn btn-primary logout" href="logout.php">logout</a>
+                            <?php else : ?>
+                                <a class="btn btn-primary logout" href="login.php">login</a>
+                            <?php endif; ?>
                         </div>
                         </div>
                     </div>
